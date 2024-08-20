@@ -7,17 +7,17 @@ import asyncio
 import os
 from keep_alive import keep_alive
 
-# Define the Discord client with Intents
+
 intents = discord.Intents.default()
-intents.message_content = True  # Enable message content intent
+intents.message_content = True  
 client = discord.Client(intents=intents)
 
-IMAGE_SIZE = (600, 600)  # Size to resize each image
-IMAGES_PER_ROW = 7  # Number of images per row
+IMAGE_SIZE = (600, 600)  
+IMAGES_PER_ROW = 7  
 
-BASE_URL = "https://dropnite.com"  # Base URL for the site
+BASE_URL = "https://dropnite.com"  
 
-# Mapping of rarity classes to background image file paths
+
 RARITY_BACKGROUNDS = {
     'rarity-icon_series': 'new/icon.png',
     'rarity-marvel': 'new/marvel.jpg',
@@ -31,11 +31,10 @@ RARITY_BACKGROUNDS = {
     'rarity-common': 'new/common.jpg'
 }
 
-VBUCKS_ICON_URL = "https://dropnite.com/img-shop/fortnite-vbucks-icon.png"  # V-Bucks icon URL
+VBUCKS_ICON_URL = "https://dropnite.com/img-shop/fortnite-vbucks-icon.png"  
 
-# Paths to the font files
-FONT_PATH_LARGE = "font/jer/Jersey10-Regular.ttf"  # Path to Jersey font file
-FONT_PATH_SMALL = "font/ked/CedarvilleCursive-Regular.ttf"  # Path to Cedarville Cursive font file
+FONT_PATH_LARGE = "font/jer/Jersey10-Regular.ttf"  
+FONT_PATH_SMALL = "font/ked/CedarvilleCursive-Regular.ttf"  
 
 def scrape_fortnite_shop():
     url = "https://dropnite.com/shop/"
@@ -140,7 +139,7 @@ def create_image_collage(image_data, output_file):
 
 async def post_daily_shop():
     await client.wait_until_ready()
-    channel = client.get_channel(1209539512842326048)  # Replace with your channel ID
+    channel = client.get_channel('channel id')  
 
     while not client.is_closed():
         preparing_message = await channel.send("Doc is preparing today's item shop...")
@@ -170,7 +169,7 @@ async def on_message(message):
             await message.channel.send("No image available. Please wait for the next update.")
 
 async def main():
-    await client.start( os.environ['Discord'])  # Use your bot token here
+    await client.start( os.environ['Discord'])  
 
 
 
