@@ -27,4 +27,10 @@ I use replit instead of IDE because it offers hiding of privacy content in our c
 ![image](https://github.com/user-attachments/assets/488c5a62-4052-4f1d-ae86-ac4dddd87b57)
 
 
+The working of this bot is given below as video format:-
+
    
+
+
+https://github.com/user-attachments/assets/affaf4cd-de9c-40fd-9f48-360a84bfc37f
+
