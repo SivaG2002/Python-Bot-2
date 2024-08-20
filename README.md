@@ -15,4 +15,16 @@ Detailed view
 ![image](https://github.com/user-attachments/assets/d4485d3a-6b10-4251-b7f3-d969c1665dce)
 
 
+This bot is build in replit which offer various tools for making the bot.
+
+Replit --> https://replit.com/
+
+The main disadvantage of using other IDE is that i doesn't hide your privacy content like bot tokens... 
+
+  
+I use replit instead of IDE because it offers hiding of privacy content in our code for example (Discord Bot Token)
+
+![image](https://github.com/user-attachments/assets/488c5a62-4052-4f1d-ae86-ac4dddd87b57)
+
+
    
